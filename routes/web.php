@@ -25,7 +25,8 @@ Route::post('/materi', [MateriController::class, 'index'])->name('materi.index')
 Route::get('/materi/{id}', [MateriController::class, 'show'])->name('materi.show');
 
 Route::get('/dokumentasi',[DokumentasiController::class,'index']);
-Route::get('dokumentasi/create', [DokumentasiController::class, 'create'])->name('dokumentasi.create');
+Route::get('/dokumentasi/create', [DokumentasiController::class, 'create'])->name('dokumentasi.create');
 Route::post('/dokumentasi/store', [DokumentasiController::class, 'store'])->name('dokumentasi.store');
 Route::post('/dokumentasi',[DokumentasiController::class,'index'])->name('dokumentasi.index');
+Route::get('/dokumentasi/{id}', [MateriController::class, 'show'])->name('dokumentasi.show');
 

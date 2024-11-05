@@ -63,6 +63,6 @@ class MateriController extends Controller
             return response()->file(storage_path('app/public/' . $material->file_path));
         }
 
-        return redirect()->route('materials.index')->with('error', 'File tidak ditemukan.');
+        return redirect()->route('materi.index')->with('error', 'File tidak ditemukan.');
     }
 }

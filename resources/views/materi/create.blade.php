@@ -8,25 +8,9 @@
     <title>Materi Kelas</title>
 </head>
 <body>
-    <div class="container absolute mx-auto ">
-        {{-- @include('admin-lte/flash') --}}
-        <div class="relative">
-            <div class="absolute top-0 left-0 text-5xl font-bold text-black-50 pt-3 pl-[15px]">Maxilloris</div>
-            <div class="absolute top-6 right-[730px]">
-                <a href="/" class="text-3xl font-bold text-black-700 hover:text-gray-500 hover:scale-105 transition-all duration-200">Home</a>
-            </div>
-            <div class="absolute top-6 right-[530px]">
-                <a href="perizinan" class="text-3xl font-bold text-black-700 hover:text-gray-500 hover:scale-105 transition-all duration-200">Perizinan</a>
-            </div>
-            <div class="absolute top-6 right-[250px]">
-                <a href="documentation" class="text-3xl font-bold text-black-700 hover:text-gray-500 hover:scale-105 transition-all duration-200">Documentation</a>
-            </div>
-            <div class="absolute top-6 right-[100px]">
-                <a href="/materi" class="text-3xl font-bold text-black-700 hover:text-gray-500 hover:scale-105 transition-all duration-200">Materi</a>
-            </div>
-            <div class="absolute  border-t-8 border-black "></div>
-        </div>
-
+    <div class="container absolute mx-auto  py-4">
+        @include('partials.navigation')
+        
 
 
         <div class="absolute top-24 left-3 container mx-auto p-6 bg-white rounded-lg shadow-lg">
@@ -69,9 +53,10 @@
 
                 <button type="submit" class="w-full mt-2 bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">Create Materi</button>
             </form>
+            @include('partials.copyright')
+
         </div>
-
-
+        
 
 </body>
 </html>
